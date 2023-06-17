@@ -82,22 +82,21 @@ body {
   margin-right: auto;
 }
 
-/* @media screen and (min-width: 428px) {
+@media screen and (min-width: 428px) {
   .container {
-    width: 428px;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
-} */
+}
 
 @media screen and (min-width: 1158px) {
   .container {
-    /* width: 1158px; */
-    /* ---------------ВОПРОС С ПАДИНГАМИ--------------- */
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -562,6 +561,18 @@ body {
   background-size: cover;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-mobile-856@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(
@@ -569,6 +580,18 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/hero-tablet-768@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/hero-tablet-1536@2x.jpg);
+    }
   }
 }
 
@@ -583,6 +606,18 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/hero-desktop-1440@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/hero-desktop-2880@2x.jpg);
+    }
   }
 }
 
@@ -687,6 +722,12 @@ body {
   color: var(--title-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .benefits .section-p {
+    max-width: 356px;
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .benefits .section-p {
     font-weight: 400;
@@ -705,12 +746,12 @@ body {
   }
 }
 
-.benefits .list {
+.benefits .benefits-list {
   padding: 0;
   margin: 0;
 }
 
-.ben-flex .list {
+.ben-flex .benefits-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -721,12 +762,12 @@ body {
 
 @media screen and (min-width: 768px) {
   .ben-flex .list {
-    justify-content: space-around;
+    /* max-width: 356px; */
   }
 }
 
 @media screen and (min-width: 1158px) {
-  .ben-flex .list {
+  .ben-flex .benefits-list {
     justify-content: center;
   }
 }
@@ -891,11 +932,11 @@ body {
   }
 }
 
-@media screen and (min-width: 1158px) {
+/* @media screen and (min-width: 1158px) {
   .our-team .list {
     justify-content: initial;
   }
-}
+} */
 
 .our-team .info {
   padding-top: 32px;
@@ -1053,6 +1094,14 @@ body {
   padding: 0;
 }
 
+@media screen and (min-width: 429px) and (max-width: 767px) {
+  .customers-list {
+    max-width: 396px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .customers-list {
     gap: 24px;
@@ -1074,7 +1123,7 @@ body {
   cursor: pointer;
 }
 /* ------------------------ВОПРОС------------------ */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 429px) and (max-width: 767px) {
   .customers-list-item {
     max-width: 190px;
   }
@@ -1183,7 +1232,7 @@ body {
 
 @media screen and (min-width: 1158px) {
   .footer .container {
-    max-width: 100%;
+    max-width: 1125px;
     align-items: baseline;
   }
 }
