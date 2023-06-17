@@ -82,7 +82,7 @@ body {
   margin-right: auto;
 }
 
-@media screen and (min-width: 428px) {
+/* @media screen and (min-width: 428px) {
   .container {
     width: 428px;
   }
@@ -92,11 +92,11 @@ body {
   .container {
     width: 768px;
   }
-}
+} */
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    /* width: 1158px; */
     /* ---------------ВОПРОС С ПАДИНГАМИ--------------- */
     padding-left: 15px;
     padding-right: 15px;
@@ -548,8 +548,7 @@ body {
   padding-bottom: 112px;
   letter-spacing: 0.02em;
   text-align: center;
-
-  max-width: 428px;
+  width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -570,7 +569,6 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/hero-tablet-768@1x.jpg);
-    max-width: 768px;
   }
 }
 
@@ -585,7 +583,6 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/hero-desktop-1440@1x.jpg);
-    max-width: 1158px;
   }
 }
 
