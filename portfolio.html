@@ -49,10 +49,12 @@
           <!--------------------NAVIGATION------------------->
           <ul class="navigation-list list">
             <li class="list-item">
-              <a href="./index.html" class="nav-link link nav-active">Studio</a>
+              <a href="./index.html" class="nav-link link">Studio</a>
             </li>
             <li class="list-item">
-              <a href="./portfolio.html" class="nav-link link">Portfolio</a>
+              <a href="./portfolio.html" class="nav-link link nav-active"
+                >Portfolio</a
+              >
             </li>
             <li class="list-item">
               <a href="" class="nav-link link">Contacts</a>
@@ -81,7 +83,6 @@
       <section class="section portfolio">
         <div class="container">
           <h1 class="visually-hidden">Main Content</h1>
-          <!-- filter  -->
           <ul class="buttons-list list">
             <li class="item">
               <button type="button" class="button-all">All</button>
@@ -99,16 +100,20 @@
               <button type="button" class="button-all">Marketing</button>
             </li>
           </ul>
-          <!-- product gallery -->
-          <ul class="gallery list">
+          <!--------------------SECTION-2-GALLERY------------------->
+          <ul class="gallery-list list">
             <li class="item">
               <a href="" class="link">
                 <div class="product-actions">
                   <img
+                    srcset="
+                      ./images/portfolio-img/bankapp-mobile@1x.jpg 1x,
+                      ./images/portfolio-img/bankapp-mobile@2x.jpg 2x
+                    "
                     class="image"
-                    src="./images/portfolio-img/bankapp.jpg"
+                    src="./images/portfolio-img/bankapp-mobile@1x.jpg"
                     alt="Banking App Interface Concept"
-                    width="360"
+                    width="396"
                   />
                   <p class="product-actions-info">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -117,7 +122,7 @@
                   </p>
                 </div>
                 <div class="info">
-                  <h2 class="section-hh">Banking App Interface Concept</h2>
+                  <h2 class="product-title">Banking App Interface Concept</h2>
                   <p class="section-p">App</p>
                 </div>
               </a>
@@ -126,10 +131,14 @@
               <a href="" class="link">
                 <div class="product-actions">
                   <img
+                    srcset="
+                      ./images/portfolio-img/payment-mobile@1x.jpg 1x,
+                      ./images/portfolio-img/payment-mobile@1x.jpg 2x
+                    "
                     class="image"
-                    src="./images/portfolio-img/payment.jpg"
+                    src="./images/portfolio-img/payment-mobile@1x.jpg"
                     alt="Cashless Payment"
-                    width="360"
+                    width="396"
                   />
                   <p class="product-actions-info">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -138,7 +147,7 @@
                   </p>
                 </div>
                 <div class="info">
-                  <h2 class="section-hh">Cashless Payment</h2>
+                  <h2 class="product-title">Cashless Payment</h2>
                   <p class="section-p">Marketing</p>
                 </div>
               </a>
@@ -147,10 +156,14 @@
               <a href="" class="link">
                 <div class="product-actions">
                   <img
+                    srcset="
+                      ./images/portfolio-img/meditationapp-mobile@1x.jpg 1x,
+                      ./images/portfolio-img/meditationapp-mobile@2x.jpg 2x
+                    "
                     class="image"
-                    src="./images/portfolio-img/meditationapp.jpg"
+                    src="./images/portfolio-img/meditationapp-mobile@1x.jpg"
                     alt="Meditation App"
-                    width="360"
+                    width="396"
                   />
                   <p class="product-actions-info">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -159,8 +172,8 @@
                   </p>
                 </div>
                 <div class="info">
-                  <h2 class="section-hh">Meditation App</h2>
-                  <p class="section-p">App</p>
+                  <h2 class="product-title">Meditation App</h2>
+                  <p class="product-tag">App</p>
                 </div>
               </a>
             </li>
@@ -168,10 +181,14 @@
               <a href="" class="link">
                 <div class="product-actions">
                   <img
+                    srcset="
+                      ./images/portfolio-img/taxiservice-mobile@1x.jpg 1x,
+                      ./images/portfolio-img/taxiservice-mobile@2x.jpg 2x
+                    "
                     class="image"
-                    src="./images/portfolio-img/taxiservice.jpg"
+                    src="./images/portfolio-img/taxiservice-mobile@1x.jpg"
                     alt="Taxi Service"
-                    width="360"
+                    width="396"
                   />
                   <p class="product-actions-info">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -180,8 +197,8 @@
                   </p>
                 </div>
                 <div class="info">
-                  <h2 class="section-hh">Taxi Service</h2>
-                  <p class="section-p">Marketing</p>
+                  <h2 class="product-title">Taxi Service</h2>
+                  <p class="product-tag">Marketing</p>
                 </div>
               </a>
             </li>
@@ -189,10 +206,14 @@
               <a href="" class="link">
                 <div class="product-actions">
                   <img
+                    srcset="
+                      ./images/portfolio-img/screenillustrations-mobile@1x.jpg 1x,
+                      ./images/portfolio-img/screenillustrations-mobile@2x.jpg 2x
+                    "
                     class="image"
-                    src="./images/portfolio-img/screenillustrations.jpg"
+                    src="./images/portfolio-img/screenillustrations-mobile@1x.jpg"
                     alt="Screen Illustrations"
-                    width="360"
+                    width="396"
                   />
                   <p class="product-actions-info">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -201,8 +222,8 @@
                   </p>
                 </div>
                 <div class="info">
-                  <h2 class="section-hh">Screen Illustrations</h2>
-                  <p class="section-p">Design</p>
+                  <h2 class="product-title">Screen Illustrations</h2>
+                  <p class="product-tag">Design</p>
                 </div>
               </a>
             </li>
@@ -210,10 +231,14 @@
               <a href="" class="link">
                 <div class="product-actions">
                   <img
+                    srcset="
+                      ./images/portfolio-img/onlinecourses-mobile@1x.jpg 1x,
+                      ./images/portfolio-img/onlinecourses-mobile@2x.jpg 2x
+                    "
                     class="image"
-                    src="./images/portfolio-img/onlinecourses.jpg"
+                    src="./images/portfolio-img/onlinecourses-mobile@1x.jpg"
                     alt="Online Courses"
-                    width="360"
+                    width="396"
                   />
                   <p class="product-actions-info">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -222,8 +247,8 @@
                   </p>
                 </div>
                 <div class="info">
-                  <h2 class="section-hh">Online Courses</h2>
-                  <p class="section-p">Marketing</p>
+                  <h2 class="product-title">Online Courses</h2>
+                  <p class="product-tag">Marketing</p>
                 </div>
               </a>
             </li>
@@ -231,10 +256,14 @@
               <a href="" class="link">
                 <div class="product-actions">
                   <img
+                    srcset="
+                      ./images/portfolio-img/inststoriesconcept-mobile@1x.jpg 1x,
+                      ./images/portfolio-img/inststoriesconcept-mobile@2x.jpg 2x
+                    "
                     class="image"
-                    src="./images/portfolio-img/inststoriesconcept.jpg"
+                    src="./images/portfolio-img/inststoriesconcept-mobile@1x.jpg"
                     alt="Instagram Stories Concept"
-                    width="360"
+                    width="396"
                   />
                   <p class="product-actions-info">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -243,8 +272,8 @@
                   </p>
                 </div>
                 <div class="info">
-                  <h2 class="section-hh">Instagram Stories Concept</h2>
-                  <p class="section-p">Design</p>
+                  <h2 class="product-title">Instagram Stories Concept</h2>
+                  <p class="product-tag">Design</p>
                 </div>
               </a>
             </li>
@@ -252,10 +281,14 @@
               <a href="" class="link">
                 <div class="product-actions">
                   <img
+                    srcset="
+                      ./images/portfolio-img/organicfood-mobile@1x.jpg 1x,
+                      ./images/portfolio-img/organicfood-mobile@2x.jpg 2x
+                    "
                     class="image"
-                    src="./images/portfolio-img/organicfood.jpg"
+                    src="./images/portfolio-img/organicfood-mobile@1x.jpg"
                     alt="Organic Food"
-                    width="360"
+                    width="396"
                   />
                   <p class="product-actions-info">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -264,8 +297,8 @@
                   </p>
                 </div>
                 <div class="info">
-                  <h2 class="section-hh">Organic Food</h2>
-                  <p class="section-p">Web Site</p>
+                  <h2 class="product-title">Organic Food</h2>
+                  <p class="product-tag">Web Site</p>
                 </div>
               </a>
             </li>
@@ -273,10 +306,14 @@
               <a href="" class="link">
                 <div class="product-actions">
                   <img
+                    srcset="
+                      ./images/portfolio-img/freshcoffee-mobile@1x.jpg 1x,
+                      ./images/portfolio-img/freshcoffee-mobile@2x.jpg 2x
+                    "
                     class="image"
-                    src="./images/portfolio-img/freshcoffee.jpg"
+                    src="./images/portfolio-img/freshcoffee-mobile@1x.jpg"
                     alt="Fresh Coffee"
-                    width="360"
+                    width="396"
                   />
                   <p class="product-actions-info">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -285,8 +322,8 @@
                   </p>
                 </div>
                 <div class="info">
-                  <h2 class="section-hh">Fresh Coffee</h2>
-                  <p class="section-p">Web Site</p>
+                  <h2 class="product-title">Fresh Coffee</h2>
+                  <p class="product-tag">Web Site</p>
                 </div>
               </a>
             </li>
@@ -371,12 +408,12 @@
         <div>
           <ul class="mobile-menu-list">
             <li class="list-item">
-              <a href="./index.html" class="mobile-menu-link mobile-active"
-                >Studio</a
-              >
+              <a href="./index.html" class="mobile-menu-link">Studio</a>
             </li>
             <li class="list-item">
-              <a href="./portfolio.html" class="mobile-menu-link">Portfolio</a>
+              <a href="./portfolio.html" class="mobile-menu-link mobile-active"
+                >Portfolio</a
+              >
             </li>
             <li class="list-item">
               <a href="" class="mobile-menu-link">Contacts</a>
